@@ -26,8 +26,15 @@
     ;
 }
 
+.iconWrapper {
+    display: flex;
+    margin-bottom: 1rem
+        /* 16px */
+    ;
+}
+
 .cardHeader {
-   
+    height:2rem;
     font-size: 1.25rem
         /* 20px */
     ;
@@ -36,9 +43,7 @@
     ;
     font-weight: 800;
     overflow: hidden;
-    width: 16rem
-        /* 256px */
-    ;
+    width: 100%;
 }
 
 .cardImageWrapper {
@@ -49,6 +54,31 @@
     border-radius: 0.75rem
         /* 12px */
     ;
+}
+
+.likeButton {
+    background-color: hsla(0, 0%, 100%, 0);
+    
+    border: none;
+}
+
+.copyButton {
+    float: right;
+    background-color: hsla(0, 0%, 100%, 0);
+
+    border: none !important;
+
+
+}
+
+
+.cardContent {
+    height:10rem;
+    overflow-y:scroll;
+}
+
+.cardContent::-webkit-scrollbar {
+    display: none;
 }
 
 @media (min-width: 1024px) {
