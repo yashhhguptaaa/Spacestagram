@@ -4,11 +4,12 @@ import Banner from '../components/banner'
 import Card from '../components/card'
 import { fetchNasaData } from '../lib/fetch_nasa_data'
 import styles from '../styles/Home.module.css'
+import InfiniteScroll from "react-infinite-scroller";
+import { useState } from 'react'
 
 
 export async function getStaticProps(context) {
   const nasaData = await fetchNasaData()
-  console.log({nasaData})
 
   return {
     props: {
@@ -18,7 +19,9 @@ export async function getStaticProps(context) {
 }
 
 export default function Home(props) {
-  const {nasaData} = props;
+  
+  const [nasaData, setNasaData] = useState(props.nasaData);
+
   return (
     <div className={styles.container}>
       <Head>
@@ -48,6 +51,7 @@ export default function Home(props) {
             </div>
         )}
       </main>
+
 
       <footer className={styles.footer}>
         
