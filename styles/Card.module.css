@@ -58,17 +58,23 @@
 
 .likeButton {
     background-color: hsla(0, 0%, 100%, 0);
-    
+    cursor: pointer;
     border: none;
+}
+
+.likeButton:hover {
+    transform: scale(1.5);
 }
 
 .copyButton {
     float: right;
     background-color: hsla(0, 0%, 100%, 0);
-
     border: none !important;
+    cursor: pointer;
+}
 
-
+.copyButton:hover {
+    transform: scale(1.5);
 }
 
 

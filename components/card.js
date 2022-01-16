@@ -58,9 +58,9 @@ const Card = (props) => {
             onClick={() => console.log("Copy button click")}
           >
             {linkCopied ? (
-              <BsCheckAll size={24} color="green" />
+              <BsCheckAll size={30} color="green" />
             ) : (
-              <RiFileCopyLine />
+              <RiFileCopyLine size={22} />
             )}
           </button>
         </div>
