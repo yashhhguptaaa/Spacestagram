@@ -11,11 +11,7 @@
   padding-right: 1rem /* 16px */;
 }
 
-.heroImage {
-  position: absolute;
-  top: 0px;
-  z-index: 1;
-}
+
 
 .cardLayout {
   display: grid;
