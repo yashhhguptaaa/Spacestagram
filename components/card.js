@@ -8,8 +8,24 @@ import styles from "../styles/Card.module.css";
 import cls from "classnames";
 
 const Card = (props) => {
-  const [isLiked, setClick] = useState(false);
+  const [isLiked, setLiked] = useState(false);
   const [linkCopied, setLinkCopied] = useState(false);
+
+  const likeHandler = () => {
+    console.log("Liked", isLiked);
+    setLiked(!isLiked);
+
+    // if (!isLiked) {
+    //   setShowLikeIcon(true);
+    //   likeIconTimer = setTimeout(() => setShowLikeIcon(false), 1000);
+    // }
+  };
+
+  const copyHandler = () => {
+    navigator.clipboard.writeText(props.imgUrl);
+    setLinkCopied(true);
+  };
+
   return (
     <div>
       <div className={cls("glass", styles.container)}>
@@ -34,31 +50,27 @@ const Card = (props) => {
         </div>
 
         <div>
-          <button className={styles.likeButton} onClick={() => {}}>
+          <button className={styles.likeButton} onClick={() => likeHandler()}>
             {isLiked ? (
               <AiFillHeart
                 size={24}
                 color="red"
                 style={{
-                  backgroundColor: "hsla(0, 0%, 100%, 0.4)",
                   marginTop: -2,
                 }}
               />
             ) : (
-              <AiOutlineHeart
-                size={24}
-                //   color={theme === "light" ? "#333" : "#eee"}
-                style={{ marginTop: -2 }}
-              />
+              <AiOutlineHeart size={24} style={{ marginTop: -2 }} />
             )}
           </button>
+
           <button
             className={styles.copyButton}
             aria-label="copy button"
-            onClick={() => console.log("Copy button click")}
+            onClick={() => copyHandler()}
           >
             {linkCopied ? (
-              <BsCheckAll size={30} color="green" />
+              <BsCheckAll size={25} color="black"   />
             ) : (
               <RiFileCopyLine size={22} />
             )}
