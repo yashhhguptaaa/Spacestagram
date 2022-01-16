@@ -8,66 +8,21 @@
 }
 
 .heroImage {
-    position: absolute;
+    position: relative;
     margin-top: 30px;
     top: 0px;
     z-index: 1;
 }
 
 .title {
-    position: absolute;
+    position: relative;
     font-weight: 800;
     color: rgba(249, 250, 251, 1);
-    margin-left: 6rem;
+    font-size: 2rem;
+    margin-left: 0rem;
   
 }
 
-
-
-
-
-.subTitle {
-    margin-top: 0.75rem;
-    font-size: 1.5rem;
-    line-height: 2rem;
-
-    color: var(--text-white-100);
-}
-
-.buttonWrapper {
-    margin-top: 1.25rem;
-}
-
-.button {
-    background-color: var(--text-purple-dark);
-    cursor: pointer;
-    color: white;
-    outline: 0;
-    border: 0px;
-
-    padding-top: 1rem
-        /* 16px */
-    ;
-    padding-bottom: 1rem
-        /* 16px */
-    ;
-    font-size: 1.125rem
-        /* 18px */
-    ;
-    line-height: 1.75rem
-        /* 28px */
-    ;
-    padding-left: 2.5rem
-        /* 40px */
-    ;
-    padding-right: 2.5rem
-        /* 40px */
-    ;
-}
-
-.button:hover {
-    background-color: var(--text-purple-dark);
-}
 
 /** 
   Breakpoints:
@@ -82,10 +37,12 @@
 /** sm breakpoint **/
 @media (min-width: 640px) {
     .title {
-        font-size: 1rem
-            /* 48px */
-        ;
-        line-height: 1;
+     
+        font-size: 4.5rem;
+        font-weight: 800;
+        color: rgba(249, 250, 251, 1);
+        margin-left: 3rem;
+      
     }
 
     .subTitle {
@@ -102,35 +59,12 @@
 /** md breakpoint **/
 @media (min-width: 768px) {
     .title {
-        font-size: 2rem
-            /* 60px */
-        ;
-        line-height: 1;
-    }
-
-    .subTitle {
-        margin-top: 1.25rem;
-    }
-
-    .button {
-        padding-top: 1rem
-            /* 16px */
-        ;
-        padding-bottom: 1rem
-            /* 16px */
-        ;
-        font-size: 1.125rem
-            /* 18px */
-        ;
-        line-height: 1.75rem
-            /* 28px */
-        ;
-        padding-left: 2.5rem
-            /* 40px */
-        ;
-        padding-right: 2.5rem
-            /* 40px */
-        ;
+     
+        font-size: 4.5rem;
+        font-weight: 800;
+        color: rgba(249, 250, 251, 1);
+        margin-left: 3rem;
+      
     }
 }
 
@@ -142,34 +76,13 @@
 
     .heroImage {
         position: relative;
-        margin-top: 78px;
+        margin-top: 128px;
         top: 0px;
         z-index: 1;
     }
 
     .title {
         font-size: 4.5rem;
-        margin-left: 10rem;
-      
-    }
-
-    .title2 {
-        padding-left: 0.5rem;
-    }
-
-    .subTitle {
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-
-    .buttonWrapper {
-        justify-content: flex-start;
-    }
-}
-
-/** xl breakpoint **/
-@media (min-width: 1280px) {
-    .title2 {
-        display: inline;
+        margin-left: 1rem;
     }
 }
