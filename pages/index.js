@@ -31,10 +31,8 @@ export default function Home(props) {
         
       />
 
-      <main >
+      <main className={styles.main}>
       {nasaData.length > 0 && (
-          <div className={styles.sectionWrapper}>
-            <h2 className={styles.heading2}>Stores near me</h2>
 
             <div className={styles.cardLayout}>
               {nasaData.map((coffeeStore) => (
@@ -48,7 +46,6 @@ export default function Home(props) {
                 />
               ))}
             </div>
-          </div>
         )}
       </main>
 

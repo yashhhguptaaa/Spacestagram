@@ -16,8 +16,8 @@
 .cardLayout {
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr));
-  column-gap: 1.5rem;
-  row-gap: 1.5rem;
+  column-gap: 2rem;
+  row-gap: 3rem;
 }
 
 .card {
@@ -33,7 +33,7 @@
 }
 
 .sectionWrapper {
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 
 /** Breakpoints:

@@ -7,21 +7,26 @@ const Card = (props) => {
     console.log({props})
   return (
     <div >
-      <a className={styles.cardLink}>
         <div className={cls("glass", styles.container)}>
-          <div className={styles.cardHeaderWrapper}>
-            <h2 className={styles.cardHeader}>{props.name}</h2>
-          </div>
-          <div className={styles.cardImageWrapper}>
+          
+          <div >
             <Image
               className={styles.cardImage}
               src={props.imgUrl}
-              width={260}
-              height={160}
+              width={307}
+              height={256}
             />
           </div>
+
+          <div >
+            <h2 className={styles.cardHeader}>{props.name}</h2>
+          </div>
+
+          <div >
+            <h2 >{props.content}</h2>
+          </div>
+
         </div>
-      </a>
     </div>
   );
 };
