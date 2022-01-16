@@ -4,56 +4,49 @@
     border-radius: 0.75rem
         /* 12px */
     ;
-    padding-top: 0.25rem
-        /* 4px */
-    ;
+
     padding-bottom: 0.25rem
         /* 4px */
     ;
-    padding-left: 1rem
-        /* 16px */
-    ;
+    
 
     backdrop-filter: blur(10px);
 }
 
-.cardHeaderWrapper {
-    margin-top: 0.75rem
-        /* 12px */
-    ;
-    margin-bottom: 0.75rem
-        /* 12px */
-    ;
-}
 
 .iconWrapper {
     display: flex;
-    margin-bottom: 1rem
+    margin-bottom: 0.1rem
         /* 16px */
     ;
+    float: right;
+}
+
+.text {
+    padding-right: 1rem;
+    font-size: 1rem
+        /* 24px */
+    ;
+    line-height: 2rem
+        /* 32px */
+    ;
+    margin: 0;
+    margin-bottom: 0px;
+    font-weight: 500;
 }
 
 .cardHeader {
-    height:2rem;
-    font-size: 1.25rem
-        /* 20px */
-    ;
-    line-height: 1.75rem
-        /* 28px */
-    ;
-    font-weight: 800;
+    margin-left: 8px;
+    height:4.4rem;
+    font-size: 1.19rem;
+    font-weight: 600;
     overflow: hidden;
-    width: 100%;
+    margin-bottom:0px ;
 }
 
-.cardImageWrapper {
-    color: var(--text-white-100);
-}
 
 .cardImage {
-    border-radius: 0.75rem
-        /* 12px */
-    ;
+    border-radius: 0.75rem;
 }
 
 .likeButton {

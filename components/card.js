@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { AiOutlineCalendar, AiFillHeart, AiOutlineHeart } from "react-icons/ai";
 import { RiFileCopyLine } from "react-icons/ri";
 import { BsCheckAll } from "react-icons/bs";
@@ -12,14 +12,45 @@ const Card = (props) => {
   const [linkCopied, setLinkCopied] = useState(false);
 
   const likeHandler = () => {
-    console.log("Liked", isLiked);
-    setLiked(!isLiked);
+    
+    
+    if(!JSON.parse(localStorage.getItem("userLiked"))){
+        let likedIds = []
+      localStorage.setItem("userLiked",JSON.stringify(likedIds))
+    }
+    let likedIds = JSON.parse(localStorage.getItem("userLiked"))
 
-    // if (!isLiked) {
-    //   setShowLikeIcon(true);
-    //   likeIconTimer = setTimeout(() => setShowLikeIcon(false), 1000);
-    // }
+    likedIds = likedIds? likedIds :[]
+  
+    if(!isLiked) {
+        likedIds.push(props.name)
+        localStorage.setItem("userLiked",JSON.stringify(likedIds))
+
+        setLiked(!isLiked);
+    }
+    else{
+        likedIds = likedIds.filter(id => id !== props.name)
+        localStorage.setItem("userLiked",likedIds)
+ 
+        setLiked(!isLiked);
+    }
   };
+
+  useEffect(() => {
+      let likedIds = JSON.parse(localStorage.getItem("userLiked"))
+     
+      if(likedIds){
+          console.log("likedIds:",likedIds)
+          let id = likedIds.find(name => name === props.name)
+    
+          if(id) {
+              setLiked(true)
+          }
+      }else {
+
+        localStorage.setItem("userLiked",JSON.stringify([]))
+      }
+  }, [props.id])
 
   const copyHandler = () => {
     navigator.clipboard.writeText(props.imgUrl);
@@ -33,18 +64,22 @@ const Card = (props) => {
           <Image
             className={styles.cardImage}
             src={props.imgUrl}
-            width={307}
-            height={256}
+            width={344}
+            height={270}
           />
         </div>
 
-        <div>
-          <h2 className={styles.cardHeader}>{props.name}</h2>
-        </div>
         <div className={styles.iconWrapper}>
-          <Image src="/icon/calendar.svg" width="24" height="24" />
+          <Image src="/icon/calendar.svg" width="30" height="30" />
           <p className={styles.text}>{props.date}</p>
         </div>
+
+        <div className={styles.cardHeader}>
+          <p >{props.name}</p>
+        </div>
+
+        
+
         <div className={styles.cardContent}>
           <p>{props.content}</p>
         </div>
