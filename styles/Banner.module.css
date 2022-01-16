@@ -5,6 +5,7 @@
 .bannerImageText {
     display: flex;
     width :100%;
+    margin-left: 4rem;
 }
 
 .heroImage {
@@ -19,8 +20,16 @@
     font-weight: 800;
     color: rgba(249, 250, 251, 1);
     font-size: 2rem;
-    margin-left: 0rem;
+    margin-left: -2rem;
   
+}
+.subIcons { 
+    margin-top: -5rem;
+    cursor: pointer;
+    color: rgba(249, 250, 251, 1);
+    font-size: 1.3rem;
+    margin-left: 3rem;
+    margin-bottom: 6rem;
 }
 
 
@@ -36,31 +45,34 @@
 
 /** sm breakpoint **/
 @media (min-width: 640px) {
-    .title {
-     
-        font-size: 4.5rem;
+    .bannerImageText{
+        margin-bottom: 12rem;
+
+    }
+    .heroImage{
+        margin-top: 5rem;
+    }
+    .title { 
+        margin-top: 7rem;
+        font-size: 2.5rem;
         font-weight: 800;
         color: rgba(249, 250, 251, 1);
-        margin-left: 3rem;
+        margin-left: -1rem;
       
-    }
-
-    .subTitle {
-        margin-top: 1.25rem;
-        max-width: 36rem;
-    }
-
-    .buttonWrapper {
-        display: flex;
-        margin-top: 2rem;
     }
 }
 
 /** md breakpoint **/
 @media (min-width: 768px) {
-    .title {
-     
-        font-size: 4.5rem;
+    .bannerImageText{
+        margin-bottom: 12rem;
+    }
+    .heroImage{
+        margin-top: 5rem;
+    }
+    .title { 
+        margin-top: 7rem;
+        font-size: 2.5rem;
         font-weight: 800;
         color: rgba(249, 250, 251, 1);
         margin-left: 3rem;
@@ -70,19 +82,18 @@
 
 /** lg breakpoint **/
 @media (min-width: 1024px) {
-    .container {
-        text-align: left;
+    .bannerImageText{
+        margin-bottom: 12rem;
     }
-
-    .heroImage {
-        position: relative;
-        margin-top: 128px;
-        top: 0px;
-        z-index: 1;
+    .heroImage{
+        margin-top: 5rem;
     }
-
-    .title {
-        font-size: 4.5rem;
-        margin-left: 1rem;
+    .title { 
+        margin-top: 7rem;
+        font-size: 2.5rem;
+        font-weight: 800;
+        color: rgba(249, 250, 251, 1);
+        margin-left: 3rem;
+      
     }
 }

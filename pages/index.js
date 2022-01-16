@@ -30,10 +30,12 @@ export default function Home(props) {
         <link rel="icon" href="/static/nasa-image.png" />
       </Head>
 
-  
+      <div className={styles.bannerComponent}>
+        <Banner />
+      </div>
 
       <main className={styles.main}>
-      {nasaData.length > 0 && (
+      {nasaData.length > 0 ? (
 
             <div className={styles.cardLayout}>
               {nasaData.map((coffeeStore) => (
@@ -47,13 +49,13 @@ export default function Home(props) {
                 />
               ))}
             </div>
+        ) : (
+          <div>
+            <Image src="/static/loader.gif" alt="Preloader Loading Gif" height={100} width={100} />
+          </div>
         )}
       </main>
 
-
-      <footer className={styles.footer}>
-        
-      </footer>
     </div>
   )
 }

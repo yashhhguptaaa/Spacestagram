@@ -1,9 +1,16 @@
 .container {
-  margin-bottom: 14rem /* 224px */;
+  margin-top: 14rem /* 224px */;
+  margin-left: 2rem;
 }
 
-.main {
-  margin-top: 2.5rem /* 40px */;
+.bannerComponent {
+  margin-top: -15rem;
+  margin-bottom :-2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main { 
   margin-left: auto;
   margin-right: auto;
   max-width: 72rem /* 1152px */;
@@ -48,26 +55,44 @@
   .container {
     padding-left: 1rem /* 16px */;
     padding-right: 1rem /* 16px */;
+    margin-left: 8rem;
+  }
+
+  .bannerComponent {
+    margin-top: -16rem;
+    margin-bottom: -13rem;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .main {
     margin-top: 7rem /* 48px */;
     padding-left: 1.5rem /* 24px */;
     padding-right: 1.5rem /* 24px */;
+    
   }
   .cardLayout {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 }
 
 @media (min-width: 768px) {
   .container {
-    padding-left: 2.5rem /* 40px */;
-    padding-right: 2.5rem /* 40px */;
+    margin-left: 2rem;
+    margin-right: -4rem;
+  }
+
+  .bannerComponent {
+    margin-top: -17rem;
+    margin-bottom :-12rem;
+    margin-left: 5rem;
+    margin-right: auto;
   }
 
   .main {
     margin-top: 7rem /* 64px */;
+    padding-left: -2rem /* 32px */;
+    padding-right: 2rem /* 32px */;
   }
 
   .heroImage {
@@ -75,14 +100,21 @@
   }
 
   .cardLayout {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(-0,2fr));
   } 
 }
 
 @media (min-width: 1024px) {
   .container {
-    padding-left: 2.5rem /* 40px */;
+    padding-left: 0.1rem /* 40px */;
     padding-right: 2.5rem /* 40px */;
+  }
+
+  .bannerComponent {
+    margin-top: -15rem;
+    margin-bottom :-12rem;
+    margin-left: auto;
+    margin-right: auto;
   }
   .main {
     margin-top: 10rem /* 80px */;
@@ -100,6 +132,9 @@
 @media (min-width: 1280px) {
   .main {
     margin-top: 7rem /* 112px */;
+  }
+  .bannerComponent {
+    margin-left: 27rem;
   }
   .cardLayout {
     grid-template-columns: repeat(3, minmax(0, 1fr));

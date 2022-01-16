@@ -12,10 +12,6 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 /* glass-morphism */
 .glass{
   background: hsla(0, 0%, 100%, 0.619);
@@ -27,7 +23,7 @@ a {
 .glass:hover {
   background: hsla(0, 0%, 100%, 0.809);
   border: 1px solid #fff;
-  transform: scale(1.04);
+
 }
 
 :root {

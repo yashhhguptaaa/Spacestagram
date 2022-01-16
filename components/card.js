@@ -29,8 +29,10 @@ const Card = (props) => {
         setLiked(!isLiked);
     }
     else{
-        likedIds = likedIds.filter(id => id !== props.name)
-        localStorage.setItem("userLiked",likedIds)
+        likedIds = likedIds.filter(name => name !== props.name)
+        
+        console.log("likedIds:",likedIds)
+        localStorage.setItem("userLiked",JSON.stringify(likedIds))
  
         setLiked(!isLiked);
     }
