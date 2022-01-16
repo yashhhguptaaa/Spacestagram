@@ -63,7 +63,7 @@ export default function ParticleSettings() {
               enable: true,
               outMode: "bounce",
               random: false,
-              speed: 3,
+              speed: 1.5,
               straight: false,
             },
             number: {
