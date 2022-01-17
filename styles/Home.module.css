@@ -32,6 +32,10 @@
   justify-content: center;
 }
 
+.loader {
+  margin-left: 3rem;
+}
+
 /** Breakpoints:
   sm: min-width: 640px;
   md: min-width: 768px;
