@@ -4,6 +4,7 @@
     border-radius: 0.75rem
         /* 12px */
     ;
+    margin-left: auto;
 
     padding-bottom: 0.25rem
         /* 4px */
@@ -80,11 +81,29 @@
     display: none;
 }
 
+@media (min-width: 390px) {
+    
+.container {
+
+    margin-left: 1.15rem;
+}
+}
+
+
+
+@media (height:720px) and (width: 540px ) {
+    
+    .container {
+    
+        margin-left: 5rem;
+    }
+    }
+
 @media (min-width: 1024px) {
-    .cardHeader {
-        width: 10rem
-            /* 256px */
-        ;
+    .container {
+    
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -93,5 +112,12 @@
         width: 16rem
             /* 256px */
         ;
+    }
+}
+@media (min-width: 1280px) {
+    .container {
+    
+        margin-left: auto;
+        margin-right: auto;
     }
 }

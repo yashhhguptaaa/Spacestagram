@@ -20,7 +20,7 @@
     font-weight: 800;
     color: rgba(249, 250, 251, 1);
     font-size: 2rem;
-    margin-left: -2rem;
+    margin-left: -2.5rem;
   
 }
 .subIcons { 
@@ -62,6 +62,14 @@
     }
 }
 
+@media (height:720px) and (width: 540px ) {
+    
+    .container {
+    
+        margin-left: 5rem;
+    }
+}
+
 /** md breakpoint **/
 @media (min-width: 768px) {
     .bannerImageText{
@@ -75,7 +83,7 @@
         font-size: 2.5rem;
         font-weight: 800;
         color: rgba(249, 250, 251, 1);
-        margin-left: 3rem;
+        margin-left: 6rem;
       
     }
 }
@@ -93,7 +101,24 @@
         font-size: 2.5rem;
         font-weight: 800;
         color: rgba(249, 250, 251, 1);
-        margin-left: 3rem;
+        margin-left: 15rem;
+      
+    }
+}
+
+@media (min-width: 1280px) {
+    .bannerImageText{
+        margin-bottom: 12rem;
+    }
+    .heroImage{
+        margin-top: 5rem;
+    }
+    .title { 
+        margin-top: 7rem;
+        font-size: 2.5rem;
+        font-weight: 800;
+        color: rgba(249, 250, 251, 1);
+        align-items: center;
       
     }
 }

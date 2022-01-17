@@ -66,13 +66,13 @@ const Card = (props) => {
           <Image
             className={styles.cardImage}
             src={props.imgUrl}
-            width={344}
-            height={280}
+            width={394}
+            height={300}
           />
         </div>
 
         <div className={styles.iconWrapper}>
-          <Image src="/icon/calendar.svg" width="30" height="30" />
+          <Image src="/icon/calendar.svg" width={30} height={30} />
           <p className={styles.text}>{props.date}</p>
         </div>
 
