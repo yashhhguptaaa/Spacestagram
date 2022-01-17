@@ -66,8 +66,9 @@ export default function Home(props) {
         <main className={styles.main}>
           {nasaData.length > 0 ? (
             <div className={styles.cardLayout}>
-              {nasaData.map((coffeeStore) => (
+              {nasaData.map((coffeeStore,idx) => (
                 <Card
+                  key={idx}
                   name={coffeeStore.name}
                   imgUrl={coffeeStore.imgUrl}
                   content={coffeeStore.content}
