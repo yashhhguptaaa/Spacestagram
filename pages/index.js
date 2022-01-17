@@ -25,7 +25,7 @@ export default function Home(props) {
     setHandleError(props.nasaData)
     window.alert(`${props.nasaData}`)
   }
-
+ 
   const [nasaData, setNasaData] = useState(props.nasaData);
   const [pageAndLimit, setPageAndLimit] = useState({ page: 2, limit: 2 });
   const loadMore = async () => {
