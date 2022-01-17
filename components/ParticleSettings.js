@@ -71,7 +71,7 @@ export default function ParticleSettings() {
                 enable: true,
                 value_area: 800,
               },
-              value: 80,
+              value: 9,
             },
             opacity: {
               value: 0.5,
@@ -81,7 +81,7 @@ export default function ParticleSettings() {
             },
             size: {
               random: true,
-              value: 5,
+              value: 80,
             },
           },
         }}

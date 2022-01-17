@@ -31,7 +31,6 @@ const Card = (props) => {
     else{
         likedIds = likedIds.filter(name => name !== props.name)
         
-        console.log("likedIds:",likedIds)
         localStorage.setItem("userLiked",JSON.stringify(likedIds))
  
         setLiked(!isLiked);
@@ -42,7 +41,7 @@ const Card = (props) => {
       let likedIds = JSON.parse(localStorage.getItem("userLiked"))
      
       if(likedIds){
-          console.log("likedIds:",likedIds)
+          
           let id = likedIds.find(name => name === props.name)
     
           if(id) {
@@ -65,7 +64,7 @@ const Card = (props) => {
         <div>
           <Image
             className={styles.cardImage}
-            src={props.imgUrl}
+            src={props.imgUrl || "https://apod.nasa.gov/apod/image/2112/EclipseAntarctica_Horalek_1500.jpg" }
             width={394}
             height={300}
           />

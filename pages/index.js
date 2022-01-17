@@ -18,6 +18,14 @@ export async function getStaticProps(context) {
 }
 
 export default function Home(props) {
+  
+  const [handleError, setHandleError] = useState("")
+  
+  if(typeof(props.nasaData)== String){
+    setHandleError(props.nasaData)
+    window.alert(`${props.nasaData}`)
+  }
+
   const [nasaData, setNasaData] = useState(props.nasaData);
   const [pageAndLimit, setPageAndLimit] = useState({ page: 2, limit: 2 });
   const loadMore = async () => {
@@ -64,9 +72,9 @@ export default function Home(props) {
         }
       >
         <main className={styles.main}>
-          {nasaData.length > 0 ? (
+          {(handleError=="" && nasaData && nasaData.length > 0 )? (
             <div className={styles.cardLayout}>
-              {nasaData.map((coffeeStore,idx) => (
+              {nasaData && nasaData.map((coffeeStore,idx) => (
                 <Card
                   key={idx}
                   name={coffeeStore.name}
@@ -78,13 +86,8 @@ export default function Home(props) {
               ))}
             </div>
           ) : (
-            <div className={styles.loader}>
-              <Image
-                src="/static/loader.gif"
-                alt="Preloader Loading Gif"
-                height={100}
-                width={100}
-              />
+            <div className={styles.main}>
+              {handleError}
             </div>
           )}
         </main>
