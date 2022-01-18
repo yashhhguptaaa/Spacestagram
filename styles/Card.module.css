@@ -47,6 +47,7 @@
 
 
 .cardImage {
+    object-fit: cover;
     border-radius: 0.75rem 0.75rem 0px 0px ;
 }
 

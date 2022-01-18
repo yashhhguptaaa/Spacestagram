@@ -1,34 +1,36 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Spacestagram
 
-## Getting Started
+This is my submission for the shopify frontend internship challenge for summer 2022.
+![Spacestagram Application!](/public/static/readmeAssets/Spacestagram.webm)
 
-First, run the development server:
+### [Deployed Link](https://spacestagram9219.vercel.app/)
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Features Implemented
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Glass Effect
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Glass Effect on the card. When the user hover on card, the glass effect is shown.
+![Glass Effect!](/public/static/readmeAssets/glassEffect.gif)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+### Loader State and Lazy Loading
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Added a loader for the time data is fetched from the NASA's api. Also implemented lazy loading alongside the loader so that only some of the images are fetched initially and the rest are fetched only when the user scrolls down to the bottom of the page.
 
-## Learn More
+![Loading State!](/public/static/loader.gif)
 
-To learn more about Next.js, take a look at the following resources:
+### Saving Liked Images
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The images liked by a user are saved to the local storage of their browser so that they are persisted even if the user goes away or refreshes the page.
+![Like Image!](/public/static/readmeAssets/likeAnimation.gif)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### BackGround Particles
 
-## Deploy on Vercel
+Made a nice animation in background. There are particles which seems like the planets in the space.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+![Background Animation!](/public/static/readmeAssets/bgAnimation.gif)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Shareable Links
+
+Users can copy the image link by clicking the copy icon on each image, so that they can then share it.
+
+![Copy Image Link!](/public/static/readmeAssets/copyLink.gif)

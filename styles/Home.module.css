@@ -33,8 +33,9 @@
 }
 
 .loader {
-  padding: 3rem;
+  padding-bottom: 3rem;
   margin-left: 3rem;
+  margin-bottom: 1rem;
 }
 
 /** Breakpoints:
