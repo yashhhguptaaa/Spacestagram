@@ -1,6 +1,7 @@
 # Spacestagram
 
 This is my submission for the shopify frontend internship challenge for summer 2022.
+
 ![Spacestagram!](/public/static/readmeAssets/Spacestagram.PNG)
 
 ### [Deployed Link](https://spacestagram9219.vercel.app/)
