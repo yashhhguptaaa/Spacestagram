@@ -1,7 +1,7 @@
 # Spacestagram
 
 This is my submission for the shopify frontend internship challenge for summer 2022.
-![Spacestagram Application!](/public/static/readmeAssets/Spacestagram.webm)
+![Spacestagram!](/public/static/readmeAssets/Spacestagram.PNG)
 
 ### [Deployed Link](https://spacestagram9219.vercel.app/)
 
@@ -9,12 +9,12 @@ This is my submission for the shopify frontend internship challenge for summer 2
 
 ### Glass Effect
 
-Glass Effect on the card. When the user hover on card, the glass effect is shown.
+Glass Effect on the card. When the user hover on card, the glass effect is shown.                   
 ![Glass Effect!](/public/static/readmeAssets/glassEffect.gif)
 
 ### Loader State and Lazy Loading
 
-Added a loader for the time data is fetched from the NASA's api. Also implemented lazy loading alongside the loader so that only some of the images are fetched initially and the rest are fetched only when the user scrolls down to the bottom of the page.
+Added a loader for the time data is fetched from the NASA's api. Also implemented lazy loading alongside the loader so that only some of the images are fetched initially and the rest are fetched only when the user scrolls down to the bottom of the page.                                         
 
 ![Loading State!](/public/static/loader.gif)
 
